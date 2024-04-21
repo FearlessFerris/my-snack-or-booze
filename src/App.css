@@ -1,0 +1,52 @@
+.App {
+  background-color: darkslategrey;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: darkslategrey;
+  margin: 0;
+}
+
+.drinks-container, 
+.snacks-container {
+  background-color: #282c34;
+  border: solid white 3px;
+  border-radius: 4%;
+  color: white;
+  flex-grow: 1;
+  margin: 20px;
+  padding: 25px;
+  width: 500px;
+}
+
+.drinks-header, 
+.snacks-header {
+  font-size: xx-large;
+  color: cyan;
+}
+
+.drinks-list,
+.snacks-list {
+  font-size: x-large;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 75px 0;
+}
+
+.loading-screen {
+  color: white;
+}
+
+.menu-description {
+  font-style: italic;
+}
