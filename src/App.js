@@ -4,12 +4,14 @@
 // Dependencies 
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, NavLink, Routes, Route, Link } from 'react-router-dom';
 
 // Components & Other Necessary Files 
 import Loading from './Loading';
 import Home from './Home';
 import NavBar from './NavBar';
+import Drinks from './Drinks';
+import Snacks from './Snacks';
 
 // App Component 
 function App() {
@@ -22,11 +24,15 @@ function App() {
 
   return (
     <div className="App">
+      <h1> Ferris's Cafe </h1> 
+      {/* { isLoading ? <Loading /> : <Home /> } */}
       <BrowserRouter> 
-        <NavBar /> 
+        <Routes> 
+          <Route path = '/' element = { <Home /> }/>
+          <Route path = '/snacks' element = { <Snacks /> }/>
+          <Route path = '/drinks' element = { <Drinks /> }/>  
+        </Routes>
       </BrowserRouter>
-      <h1> Restaurant </h1> 
-      { isLoading ? <Loading /> : <Home /> }
     </div>
   );
 }

@@ -1,0 +1,35 @@
+.container {
+    display: inline-flex;
+    margin-top: 50px; 
+}
+
+.homepage-header {
+    color: cyan;
+    font-size: xx-large;
+    margin: 20px;
+}
+.homepage-container {
+    border: 4px solid white;
+    background-color: #181818;
+    border-radius: 3px;
+    width: 500px;
+}
+
+.homepage-snacks-link,
+.homepage-drinks-link {
+    color: cyan;
+    font-size: x-large;
+    margin: 20px;
+    text-decoration: none;
+    display: inline-block; 
+    padding: 10px 20px; 
+    border: 2px solid transparent; 
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.homepage-snacks-link:hover,
+.homepage-drinks-link:hover {
+    background-color: white;
+    border-color: black;
+}
