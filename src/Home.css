@@ -16,7 +16,8 @@
 }
 
 .homepage-snacks-link,
-.homepage-drinks-link {
+.homepage-drinks-link,
+.homepage-add-link {
     color: cyan;
     font-size: x-large;
     margin: 20px;
@@ -29,7 +30,8 @@
 }
 
 .homepage-snacks-link:hover,
-.homepage-drinks-link:hover {
+.homepage-drinks-link:hover,
+.homepage-add-link:hover {
     background-color: white;
     border-color: black;
 }

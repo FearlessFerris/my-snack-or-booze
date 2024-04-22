@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 import dbData from './db.json';
 import './Drinks.css';
 
+import DrinksRecipes from './DrinksRecipes';
+
 // Drinks Component 
 function Drinks(){ 
 
@@ -23,7 +25,9 @@ function Drinks(){
                 <CardBody>
                     <ul className = 'drinks-list'>
                         { dbData.drinks.map(( item, index ) => (
-                            <li key = { index }> <Link to = {`/drinks/${ item.name }`} className = 'drinks-link'> {item.name} </Link> </li>
+                            <li key = { index }> 
+                                <Link to = {`/drinks/${ item.id }`} className = 'drinks-link'> { item.name } </Link> 
+                            </li>
                         ))}
                     </ul>
                     <p className = 'menu-description'> Enjoy from our selection of <span className = 'drinks-count'> { drinks } </span> different house made beverages </p>

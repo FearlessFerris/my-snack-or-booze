@@ -25,6 +25,7 @@ function Home() {
                 <CardBody className = 'homepage-body'>
                     <NavLink to = '/snacks' className = 'btn homepage-snacks-link'> Snacks </NavLink> 
                     <NavLink to = '/drinks' className = 'btn homepage-drinks-link'> Drinks </NavLink>
+                    <NavLink to = '/add' className = 'btn homepage-add-link'> Add Menu Item </NavLink>
                 </CardBody>
             </Card>
         </div>

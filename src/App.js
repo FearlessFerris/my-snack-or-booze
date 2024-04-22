@@ -10,8 +10,11 @@ import { BrowserRouter, NavLink, Routes, Route, Link } from 'react-router-dom';
 import Loading from './Loading';
 import Home from './Home';
 import NavBar from './NavBar';
+import AddItemForm from './AddItemForm';
 import Drinks from './Drinks';
 import Snacks from './Snacks';
+import DrinksRecipes from './DrinksRecipes';
+import SnacksRecipes from './SnacksRecipes';
 
 // App Component 
 function App() {
@@ -31,6 +34,9 @@ function App() {
           <Route path = '/' element = { <Home /> }/>
           <Route path = '/snacks' element = { <Snacks /> }/>
           <Route path = '/drinks' element = { <Drinks /> }/>  
+          <Route path = '/add' element = { <AddItemForm /> } />
+          <Route path = '/drinks/:id' element = { <DrinksRecipes /> } /> 
+          <Route path = '/snacks/:id' element = { <SnacksRecipes /> } /> 
         </Routes>
       </BrowserRouter>
     </div>
